@@ -1,0 +1,33 @@
+{
+    "name": "nodeWebKit",
+    "description":"this is about node-webkit demo",
+    "main":"index.html",
+    "version": "0.0.1",
+    "no-edit-menu":true,
+    "nodejs":true,
+    "node-main":"./routes/test.js",
+    "window":{
+        "title":"hello nodewebkit",
+        "toolbar":false,
+        "resizable":true,
+        "always-on-top":false,
+        "width":600,
+        "height":400,
+        "show_in_taskbar":true,
+        "frame":false,//是否有外边框
+        "icon":"./public/image/favicon.png",
+        "max_width":800,
+        "max_height":600,
+        "fullscreen":false,
+        "position":"center"
+    },
+    "chromium-args":"allow-file-access-from-files",
+    "webkit":{
+        "plugin":true
+    },
+    "dependencies":{
+        "mysql":"2.5.3",
+        "mysql-queues":"1.0.0",
+        "async":"0.9.0"
+    }
+}
